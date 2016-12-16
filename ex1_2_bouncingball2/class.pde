@@ -16,7 +16,7 @@ class Ball{
   void renderBox(){
     //draw the box
     smooth();
-    stroke(150,50);
+    stroke(150,150);
     for(int i=0; i<l;i+=40){
           line(i,0,0,i,h,0);
           line(i,0,0,i,0,w);
@@ -42,11 +42,12 @@ class Ball{
   
   void loadBall(){
     location.add(velocity);
-    stroke(0);
+    stroke(255);
     fill(100,0,0,10);
+    pushMatrix();
     translate(location.x,location.y,location.z);
     sphere(radius);
-    
+    popMatrix();
   }
   
   void calVelo(){

@@ -30,9 +30,9 @@ void draw(){
   }
   
   stroke(0);
-  fill(100,0,0,50);
+  fill(100,0,0,10);
   
-  rotate(PI/3);
+
   beginShape();
   vertex(min.x,min.y,min.z);
   vertex(max.x,min.y,min.z);  
@@ -46,12 +46,11 @@ void draw(){
   vertex(max.x,max.y,max.z); 
   vertex(min.x,max.y,max.z);  
   endShape(CLOSE); 
-  rotate(-PI/3);
   
   translate(location.x,location.y,location.z);
-    rotateX(PI/3);
+
   fill(175);
-  sphere(radius);
+  sphere(radius/2);
 
   println("location:"+location.x,location.y,location.z);
   println("velocity:"+velocity.x+velocity.y,velocity.z);

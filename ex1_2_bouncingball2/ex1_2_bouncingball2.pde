@@ -8,6 +8,7 @@ void setup(){
 }
 
 void draw(){
+  background(120,100,160);
   pushMatrix();
   translate(width/2-100,height/2-100,-200);
   rotateX(-PI/6);
