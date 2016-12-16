@@ -23,11 +23,11 @@ class Car {
   void check(){
     if(keyPressed== true)
     {
-      if(key=='up')
+      if(keyCode==UP)
       {
         velocity.add(acceleration);
       }
-      else if(key=='down'){
+      else if(keyCode==DOWN){
         velocity=(0,0);
       }
       //acceleration.mult(-1);
