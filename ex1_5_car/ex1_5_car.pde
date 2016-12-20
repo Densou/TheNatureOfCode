@@ -1,4 +1,5 @@
 Car car1;
+Tree tree1;
 PVector location1;
 
 void setup()
@@ -7,6 +8,7 @@ void setup()
   smooth();
   location1=new PVector(100,100);
   car1=new Car(location1);
+  tree1=new Tree();
 }
 
 void draw(){
@@ -14,4 +16,5 @@ void draw(){
   car1.update();
   car1.check();
   car1.render();
+  tree1.render();
 }
