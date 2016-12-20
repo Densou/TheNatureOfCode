@@ -9,7 +9,7 @@ class Car {
     w=20;
     l=65;
     topspeed=10;
-    acceleration=new PVector(0,0.05);
+    acceleration=new PVector(0,0.08);
     velocity=new PVector(0,0);
     location=location_;
   }
