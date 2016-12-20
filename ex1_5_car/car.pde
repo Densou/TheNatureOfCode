@@ -9,7 +9,7 @@ class Car {
     w=20;
     l=65;
     topspeed=10;
-    acceleration=new PVector(0,0.01);
+    acceleration=new PVector(0,0.05);
     velocity=new PVector(0,0);
     location=location_;
   }
@@ -28,7 +28,7 @@ class Car {
         velocity.add(acceleration);
       }
       else if(keyCode==DOWN){
-        velocity=(0,0);
+        velocity=new PVector(0,0);
       }
       //acceleration.mult(-1);
     }
