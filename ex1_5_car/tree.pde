@@ -7,10 +7,14 @@ class Tree{
   }
   
   void render(){
-    fill(30,200,30);
+    
+  
     noStroke();
-curve(73, 24, 73, 61, 15, 65, 15, 65);
-    //curve();
+    fill(160,100,50);
+    rect(40,90,10,30);
+    fill(30,200,30);
+    arc(45,75,60,60, PI/2+QUARTER_PI/8,QUARTER_PI/8+2.5*PI,CHORD);
+    
   }
   
 }
