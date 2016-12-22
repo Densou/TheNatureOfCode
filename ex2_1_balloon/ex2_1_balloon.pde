@@ -14,7 +14,7 @@ void setup(){
 }
 
 void draw(){
-  background(230);
+  background(200,40,60);
   
   for(int i=0; i<balloons.length;i++){
     balloons[i].render();
