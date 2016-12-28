@@ -36,7 +36,7 @@ class Balloon{
   
   void update(){
     wind= new PVector((noise(1,frameCount/200)-0.5)*0.04,(noise(2,frameCount/200)-0.5)*0.01);
-    a=PVector.add(f,wind);
+    a=PVector.add(f,wind);//use static function here, otherwise a increases.
     //println(a.x,a.y);
     v.add(a);
     l.add(v);
